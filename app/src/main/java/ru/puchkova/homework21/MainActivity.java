@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 name = nameETxt.getText().toString();
                 mail = mailETxt.getText().toString();
                 if(name.equals("") && mail.equals("")) {
-                    resultTxt.setText("Вы не ввели имя и почту, рассылка не оформлена.");
+                    resultTxt.setText(getString(R.string.invalid));
                 } else if (name.equals("") && !mail.equals("")){
-                    resultTxt.setText("Вы не ввели имя, рассылка не оформлена.");
+                    resultTxt.setText(getString(R.string.invalidName));
                 } else if (!name.equals("") && mail.equals("")){
-                    resultTxt.setText("Вы не ввели почту, рассылка не оформлена.");
+                    resultTxt.setText(getString(R.string.invalidMail));
                 } else {
-                    resultTxt.setText("Подписка на рассылку успешно оформлена на пользователя " + name + " на электронный адрес " + mail + ".");
+                    resultTxt.setText(getString(R.string.correct) + " " + name + " " + getString(R.string.correctMail) + " " + mail + ".");
                 }
             }
         };

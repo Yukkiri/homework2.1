@@ -5,4 +5,9 @@
     <string name="ok">ОК</string>
     <string name="clear">Очистить</string>
     <string name="result">Подписка на рассылку успешно оформлена для пользователя name на электронный адресс mail</string>
+    <string name="invalid">Вы не ввели имя и почту, рассылка не оформлена.</string>
+    <string name="invalidName">Вы не ввели имя, рассылка не оформлена.</string>
+    <string name="invalidMail">Вы не ввели почту, рассылка не оформлена.</string>
+    <string name="correct">Подписка на рассылку успешно оформлена на пользователя </string>
+    <string name="correctMail"> на электронный адрес </string>
 </resources>
